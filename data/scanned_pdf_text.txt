@@ -1,5 +1,549 @@
+# BCET CHATBOT KNOWLEDGE BASE
+## Balasore College of Engineering & Technology (BCET)
+> Optimized for chatbot retrieval — structured with clear headings, keywords, and Q&A-style facts.
+
+---
+
+## 1. COLLEGE OVERVIEW
+
+**Full Name:** Balasore College of Engineering & Technology (BCET)
+**Established:** 2001
+**Location:** NH-16, Sergarh, Balasore – 756060, Odisha, India
+**Type:** Private Self-Financing Institution (Non-Minority, Co-Ed)
+**Managed by:** Fakir Mohan Educational & Charitable Trust (Regd. No. 458/99)
+**Approved by:** AICTE, New Delhi
+**Affiliated to:** Biju Patnaik University of Technology (BPUT), Bhubaneswar
+**Website:** www.bcetodisha.ac.in
+**Email:** principal@bcetodisha.ac.in / bcetbalasore@yahoo.com
+**Phone:** 9777938474 / (06782) 236045
+**FAX:** (06782) 236609
+**Nearest Railway Station:** Balasore (10 km)
+**Nearest Airport:** Bhubaneswar (200 km)
+**Office Hours:** 9:00 AM – 4:00 PM
+**Academic Hours:** 8:00 AM – 5:00 PM
+
+**Award:** Best Engineering College of Odisha State – 2022 (by ISTE)
+**Award:** Narayan Memorial Best Engineering College Principal Award – 2023
+
+---
+
+## 2. VISION & MISSION
+
+**Vision:** To become an institute of excellence in technical and management education and to produce industry-ready professionals for the nation.
+
+**Mission:**
+- M1: Provide inclusive, student-centric engineering & management education emphasizing academic excellence, creativity, and community service.
+- M2: Engage faculty and students in innovative research with academia-industry collaboration.
+- M3: Empower students to become leaders, innovators, and problem-solvers capable of addressing complex global challenges.
+
+---
+
+## 3. KEY LEADERSHIP
+
+| Role | Name | Contact |
+|------|------|---------|
+| Chairman | Dr. Manmath Kumar Biswal | 9437065317 |
+| Vice Chairman | Mr. Abhishek Biswal | — |
+| Director | Dr. Ratikanta Sahoo (PhD – Mech. Engg., MTech – IIT Kharagpur) | 9337178371 |
+| Principal | Dr. Sibendra Kumar Gharai (ME & PhD) | 9439199850 |
+| Vice Principal | Mr. Jyotiranjan Rout (MTech, MCA – 17 yrs experience) | 9937393122 |
+| Dean Academic | Mr. Saroj Kumar Patra | 9437321920 |
+| Estate Officer / Muna Sir | Mr. Pradipta Kumar Shaw | 9437533328 |
+
+> **Muna Sir Note:** Mr. Pradipta Kumar Shaw manages college issues on behalf of the Chairman. Contact for general problems: **9437533328**
+
+---
+
+## 4. COURSES OFFERED & SEAT INTAKE (2025-26)
+
+### B.Tech (UG) — Affiliated to BPUT
+
+| Department | Seats (2025-26) |
+|------------|----------------|
+| Computer Science & Engineering (CSE) | 90 |
+| Mechanical Engineering (ME) | 120 |
+| Civil Engineering (CE) | 60 |
+| Electrical Engineering (EE) | 60 |
+| Electronics & Telecommunication Engineering (ETC) | 60 |
+
+### Postgraduate (PG) — Affiliated to BPUT
+
+| Course | Seats |
+|--------|-------|
+| Master of Business Administration (MBA) | 60 |
+| Master of Computer Applications (MCA) | 60 |
+| M.Tech – Heat Power & Thermal Engineering (ME) | 18 |
+| M.Tech – CSE (New) | 30 |
+| M.Tech – Power Electronics & Drives (New) | 18 |
+
+### New Courses (2026-27)
+
+| Course | Seats |
+|--------|-------|
+| B.Tech Lateral Entry – Mechanical Engineering | 30 |
+| B.Tech Lateral Entry – Electrical Engineering | 30 |
+
+---
+
+## 5. COURSE FEES (Per Year)
+
+| Course | Fee |
+|--------|-----|
+| B.Tech (First Year) | ₹54,900/year |
+| B.Tech (Lateral Entry) | ₹54,900/year |
+| MBA | ₹64,100/year |
+| MCA | ₹54,900/year |
+| M.Tech | ₹64,100/year |
+
+---
+
+## 6. ADMISSION PROCESS (OJEE / JEE MAIN)
+
+### Who Can Apply
+- **JEE Main rank holders** → B.Tech, B.Plan, B.Arch, B.Pharm, B.CAT, Int. MSc
+- **OJEE-2024 qualified** → All other programs
+
+### Step-by-Step Counselling Process
+1. **Registration** – Visit www.ojee.nic.in, click "New Candidate Registration"
+2. **Counselling Fee** – Pay ₹450/- online only
+3. **Choice Filling** – Add colleges and branches in order of preference
+4. **Mock Allotment** – Check indicative allotment status
+5. **Choice Locking** – Lock choices using your own password *(irreversible — cannot be changed after locking)*
+6. **Round-I Allotment** – View allotment result online / SMS
+7. **Post-Allotment Steps:**
+   - Choose Freeze/Float option for seat upgradation
+   - Upload required documents (PDF format only)
+   - Pay Part Admission / Seat Confirmation Fee
+8. **Document Verification** – Done online; queries resolved within deadline
+9. **Round-II Allotment** – New allotments or upgrades
+10. **Round-III Allotment** – Final open round (for 2nd/Special OJEE students too)
+11. **Final Allotment Letter** – Download and report to allotted college
+
+### Part Admission Fee
+| Category | Fee |
+|----------|-----|
+| General | ₹10,000 |
+| SC / ST / PC | ₹5,000 |
+
+### Withdrawal & Refund
+- Withdrawal refunds ₹5,000 or ₹10,000 (as deposited) if done within schedule
+- **No refund** after the withdrawal deadline under any circumstances
+- Candidates who paid and did NOT withdraw but also did NOT report — no refund
+
+### TFW (Tuition Fee Waiver) Scheme
+- For candidates whose parents' annual income < ₹8 Lakhs
+- Applicable to: B.Tech, B.Pharm, B.Plan, LE B.Tech, LE Pharm, MBA, MCA
+- Only for native Odisha candidates
+- Must submit income certificate (Appendix-VII / online issued)
+- Limited to 5% supernumerary of sanctioned intake
+
+---
+
+## 7. UGC FEE REFUND POLICY (2024-25)
+
+| Withdrawal Timing | Refund |
+|-------------------|--------|
+| Up to 30 September 2024 | Full refund |
+| Up to 31 October 2024 | Full refund minus ₹1,000 processing fee |
+| 15+ days before last admission date | 100% |
+| < 15 days before last admission date | 90% |
+| ≤ 30 days after last admission date | 80% |
+| 15–30 days after last admission date | 50% |
+| > 30 days after last admission date | 0% |
+
+---
+
+## 8. DEPARTMENTS & HEAD OF DEPARTMENTS (HODs)
+
+| Department | HOD | Contact |
+|-----------|-----|---------|
+| CSE | Mr. Jyotiranjan Rout | 9937393122 |
+| Mechanical Engg. | Mr. Pradeep Kumar Mohanty | 9439055072 |
+| Civil Engg. | Mr. Sanjeeb Kumar Chaudhury | — |
+| Electrical Engg. | Mrs. Subhashree Das | — |
+| Electronics & Telecom | Mrs. Prabhati Sethy | 9438702796 |
+| MBA | Dr. Subarna Keshari Samal | 9861241913 |
+| MCA | Dr. Basanta Kumar Padhi | — |
+| Basic Science & Humanities (BSH) | Dr. Jyotirmayee Ojha | — |
+
+---
+
+## 9. FACULTY — COMPUTER SCIENCE & ENGINEERING (CSE)
+
+| Name | Designation | Qualification | Experience | Email |
+|------|-------------|--------------|------------|-------|
+| Mr. Jyotiranjan Rout (HOD/VP) | Asst. Prof | MTech, MCA | 17 yrs | jrrout75@gmail.com |
+| Mrs. Madhusmita Dey | Asst. Prof | BTech, MTech | 4 yrs | madhusmitadey@gmail.com |
+| Mr. Tapas Kumar Das | Asst. Prof | BTech, MTech | 26 yrs | tapas@gmail.com |
+| Mr. Saumya Ranjan Sahu | Asst. Prof | BE, ME, PhD(cont.) | 16 yrs | sahusouryasig@gmail.com |
+| Mr. Surendra Nath Bhagat | Asst. Prof | BE, MTech, PhD(cont.) | 16 yrs | suren.bhagat@gmail.com |
+| Mr. Ramesh Jana | Asst. Prof | BTech, MTech, PhD(cont.) | — | — |
+| Miss. Zeenat Afroz | Asst. Prof | BTech, MTech | 1 yr | zafroz1324311@gmail.com |
+| Miss. Krishna Pattanayak | Asst. Prof | BTech, MTech | 1 yr | — |
+| Mr. Shyamsundar Sahoo | Asst. Prof | BTech, MTech | 1 yr | Shyamasundar03@gmail.com |
+| Miss. Sonali Kar | Asst. Prof | BTech, MTech | 1 yr | sonalikar2506@gmail.com |
+| Mr. Santosh Kumar Mahallick | Asst. Prof | BTech, MTech | — | — |
+| Mr. Rajesh Kumar Moharana | Asst. Prof | BTech, MTech, PhD(cont.) | — | rmoharana@rediffmail.com |
+| Mr. Debaranjan Nayak | Asst. Prof | BTech, MTech | 13 yrs | debaranjan.omm@gmail.com |
+| Mr. Pritiranjan Bijaya Singh | Asst. Prof | BTech, MTech | — | pritiprsig@yahoo.com |
+
+**Subjects Taught (CSE):** Algorithm Design & Analysis, Theory of Computation, FLAT, Soft Computing, Internet & Web Technology, Software Engineering, Data Structure, OOP/JAVA, Database Management, Operating System, IOT, Python, AI/ML, Big Data, Computer Networks, Computer Graphics, Digital Design
+
+---
+
+## 10. FACULTY — CIVIL ENGINEERING
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Mr. Sanjeeb Kumar Chaudhury (HOD) | Asst. Prof | BTech, MTech, PhD(cont.) | 9 yrs |
+| Mr. Saroj Kumar Patra (Dean Acad.) | Asst. Prof | MTech | 20 yrs |
+| Mrs. Punyamayee Pattanaik | Asst. Prof | BTech, MTech | 3 yrs |
+| Miss. Rojalin Shaw (Chaudhury) | Asst. Prof | BTech, MTech | — |
+| Mr. Chandan Kumar Mohanty | Asst. Prof | BTech, MTech | 8 yrs |
+| Miss. Rajashree Pusti | Asst. Prof | BTech, MTech | — |
+| Mr. Jyotishankar Rath | Asst. Prof | BTech, MTech | 9 months |
+| Mrs. Kalpashri Behera | Asst. Prof | BTech, MTech | 1 yr |
+
+---
+
+## 11. FACULTY — ELECTRICAL ENGINEERING
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Mrs. Subhashree Das (HOD) | Asst. Prof | BTech, MTech, PhD(cont.) | 20 yrs |
+| Dr. Mrutyunjay Das | Asso. Prof | BTech, MTech, PhD | — |
+| Mrs. Prachi Panda | Asst. Prof | BTech, MTech | 9 yrs |
+| Mr. Shashi Bhusan Behera | Asst. Prof | BTech, MTech, PhD(cont.) | 9 yrs |
+| Mr. Sanjay Kumar Parida | Asst. Prof | BTech, MTech | 12 yrs |
+| Mr. Sushil Kumar Swain | Asst. Prof | BTech, MTech, PhD(cont.) | 13 yrs |
+| Mr. Krushna Chandra Sahoo | Asst. Prof | BTech, MTech, PhD(cont.) | — |
+| Mrs. Upasana Mohapatra | Asst. Prof | BTech, MTech | 12 yrs |
+
+---
+
+## 12. FACULTY — ELECTRONICS & TELECOMMUNICATION (ETC)
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Mrs. Prabhati Sethy (HOD) | Asst. Prof | BE, MTech | Continuing |
+| Mr. Subhransu Sekhar Parhi | Asst. Prof | BE, ME, PhD(cont.) | 14 yrs |
+| Mr. Debasish Panigrahi | Asst. Prof | BTech, MTech, PhD(cont.) | 13 yrs |
+| Mr. Rajib Kumar Sahoo | Asst. Prof | BTech, MTech, PhD(cont.) | — |
+| Mr. Jajnyadata Samantaray | Asst. Prof | BTech, MTech, PhD(cont.) | — |
+| Mr. Satyajit Mohanty | Asst. Prof | BE, MTech, PhD(cont.) | 2 yrs |
+
+---
+
+## 13. FACULTY — MECHANICAL ENGINEERING
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Dr. Ratikanta Sahoo (Director) | Professor | PhD | 29+ yrs |
+| Dr. Sibendra Kumar Gharai (Principal) | Professor | BE, ME, PhD | — |
+| Mr. Pradeep Kumar Mohanty (HOD) | Asst. Prof | MTech | — |
+| Mrs. Debashree Mohanty | Asst. Prof | BE, MTech | — |
+| Mrs. Monalisa Samal | Asst. Prof | BE, MTech, PhD(cont.) | 12 yrs |
+| Mr. Bikash Chandra Bhuyan | Asst. Prof | BTech, MTech | 10 yrs |
+| Mr. Bhabani Shankar Rana | Asst. Prof | BTech, MTech | 10 yrs |
+| Mr. Satchida Nanda Ghosh | Asst. Prof | BE, MTech, PhD(cont.) | 15 yrs |
+| Mr. Shashikanta Nayak | Asst. Prof | BE, MTech | — |
+| Mr. Ashis Kumar Patra | Asst. Prof | BE, MTech | — |
+| Mr. Manas Puhan | Asst. Prof | BTech, MTech | — |
+| Mr. Dibyanarayan Behera | Asst. Prof | BTech, MTech, PhD(cont.) | 1 yr |
+| Mr. Pankaj Kumar Mohapatra | Asst. Prof | BTech, MTech | — |
+
+---
+
+## 14. FACULTY — MBA
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Dr. Subarna Keshari Samal (HOD) | Asso. Prof | MA (Economics), PhD | 17+ yrs |
+| Dr. Dhirendra Kumar Jena (IQAC Coord.) | Asso. Prof | ME, PhD | 24 yrs |
+| Mr. Ambuja Lochan Dash | Asst. Prof | MBA, PhD | 13 yrs |
+| Mr. Manoj Kumar Jena | Asst. Prof | MBA, PhD(cont.) | 17 yrs |
+| Dr. Rashmilata Nayak | Asst. Prof | MBA, PhD | 8 yrs |
+| Dr. Tulasi Bej | Asst. Prof | MBA, PhD | 14 yrs |
+| Miss. Monalisa Nayak | Asst. Prof | MBA | — |
+| Mrs. Suhasini Choudhury | Asst. Prof | MBA, PhD(cont.) | — |
+| Mr. Bibhuti Ranjan Nayak | Asst. Prof | MBA | 1 yr |
+| Mr. Avinash Jena | Asst. Prof | BTech, MBA | — |
+| Miss. Nibedita Padhi | Asst. Prof | MBA | — |
+| Mr. Sarada Prasanna Pattanaik | Asst. Prof | MBA | — |
+
+---
+
+## 15. FACULTY — MCA
+
+| Name | Designation | Qualification | Experience |
+|------|-------------|--------------|------------|
+| Dr. Basanta Kumar Padhi (HOD) | Asst. Prof | MCA, MTech (CS), PhD | — |
+| Mrs. Banaja Basini Rath | Asst. Prof | MCA, MTech (CS), PhD(cont.) | 15 yrs |
+| Ms. Jayanti Dash | Asst. Prof | MCA, MTech (CS) | — |
+| Mr. Debasish Ranjan Das | Asst. Prof | MCA | 1 month |
+| Ms. Arpita Sahoo | Asst. Prof | MCA | 1 yr |
+| Dr. Gyan Kant Abani Kumar Dash | Asst. Prof | MTech, PhD | 18 yrs |
+| Mr. Basanta Kumar Padhi | Asst. Prof | MCA | 28 yrs |
+
+---
+
+## 16. FACULTY — BASIC SCIENCE & HUMANITIES (BSH)
+
+| Name | Branch | Qualification |
+|------|--------|--------------|
+| Dr. Jyotirmayee Ojha (HOD) | English | MA, PhD |
+| Mr. Sambhunath Behera | Mathematics | MSc, MPhil |
+| Miss. Jayasmita Patra | Mathematics | MSc, MPhil, MBA, PhD(cont.) |
+| Dr. Smrutirekha Debata | Mathematics | MSc, PhD |
+| Mr. Chandan Kumar Sahoo | Mathematics | MSc |
+| Mrs. Arunima Nayak | Mathematics | MSc |
+| Dr. Partha Sarathi Prasad Sarangi | English | MA, PhD |
+| Ms. Sripada Das | English | MA |
+| Dr. Jayanta Kumar Mishra | English | MA, PhD |
+| Mr. Amit Kumar Das | Physics | MSc |
+| Mr. Satyajit Sahu | Physics | MSc |
+| Mr. Nimai Charan Das | Physics | MSc |
+| Dr. Manoranjan Pradhan | Chemistry | MSc, PhD |
+| Dr. Uttam Panda | Chemistry | MSc, PhD |
+| Mr. Rajat Sahoo | Chemistry | MSc |
+| Ms. Rashmita Kar | Chemistry | MSc |
+| Ms. Saswati Kar | Chemistry | MSc |
+| Miss. Monalisa Mishra | Chemistry | MSc |
+| Mr. Pradeep Kumar Roul | Mathematics | MSc |
+
+---
+
+## 17. IMPORTANT COMMITTEES & CONTACTS
+
+### Anti-Ragging Squad
+- **Chairperson:** Mr. Jyoti Ranjan Rout (Vice Principal, CSE) – **9937393122**
+- Convener: Mr. Ramesh Jana (CSE) – 9348735491
+- Members include faculty from all departments
+
+### Anti-Ragging Committee
+- **Chairperson:** Dr. Sibendra Kumar Gharai (Principal) – **9439199850**
+- Includes ADM Balasore, Police, Journalists, and Students
+
+### Internal Complaint Committee (ICC)
+- **Chairperson:** Dr. Manmath Kumar Biswal (Chairman) – 9437065317
+- Convener: Dr. Sibendra Kumar Gharai – 9439199850
+
+### Sexual Harassment Cell
+- **Chairperson:** Mr. Pradeep Kumar Mohanty (HOD ME) – 9439055072
+- Includes external member: Mrs. Lina Mohapatra (NAWO) – 7381636143
+
+### Grievance Redressal Committee (Faculty/Staff)
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+- Members include Director, BPUT nominees, and HODs
+
+### Student Counsellor Committee
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+- Members: HODs of all departments + Admin Staff
+
+### SC/ST Committee
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+
+### OBC Cell
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+
+### Minority Cell
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+- Convenor: Ms. Zeenat Afroz (CSE) – 9438728795
+
+### SEDG Cell (Socio-Economically Disadvantaged Group)
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+
+### RTI Cell
+- First Appellate Authority (FAA): Mr. Jyoti Ranjan Rout – 9937393122
+- Public Information Officer (PIO): Mr. Dillip Kumar Das – 9437011817
+- APIO: Mr. Pradipta Kumar Shaw – 9437533328
+
+### IQAC (Internal Quality Assurance Cell)
+- **Chairperson:** Prof. Dr. Ratikanta Sahoo (Director) – 9337178371
+- Coordinator: Dr. Dhirendra Kumar Jena (MBA) – 9337881566
+
+### Institution-Industry Cell
+- **Chairperson:** Dr. Sibendra Kumar Gharai – 9439199850
+- Industry Members: Mr. Akshaya Kumar Behera (9437173798), Mr. Trilochan Tarai (9439202111)
+
+### NSS (National Service Scheme)
+- Programme Officer: Mr. Ambuja Lochan Dash (MBA Dept.)
+- NSS started at BCET in 2012 under Fakir Mohan University Bureau
+- Activities: Blood donation, digital literacy, drug de-addiction awareness, Swachha Bharat, Fit India
+
+---
+
+## 18. PLACEMENT INFORMATION
+
+- **Average Package:** ₹3.15 LPA
+- **Highest Package:** ₹8.5 LPA (campus recruitment)
+- **Placement Rate:** 90% of eligible final year students
+- **Key Recruiters:** JSpiders, Devgiri Forgings, Baja, Klassic Wheels, Maso Automotives, Aman Infra
+
+---
+
+## 19. HOSTEL INFORMATION
+
+- Hostel accommodation available to all registered students
+- Application in prescribed form from Hostel Office or Academic Section
+- No booking via phone/email
+- No married accommodation
+- Room allotment at sole discretion of Hostel Management
+- **Timings:** 1st year students – must return by 3:00 PM | Others – by 6:00 PM
+- Prohibited: Cigarette, alcohol, drugs, gambling, electric appliances (kettle, heater, cooler)
+- Fine for unclean room: ₹100 | Unauthorized appliances: ₹500 | Unauthorized mobile: ₹500
+- Birthday/celebrations strictly prohibited in hostel
+- Ragging in hostel: fine up to ₹10,000 + dismissal from hostel and college
+
+---
+
+## 20. DRESS CODE & DISCIPLINE
+
+- College uniform is mandatory on all working days
+- Penalty for not wearing uniform: **₹500** (may be higher for repeat offenders)
+- Working schedule: Monday–Saturday, 9:00 AM – 4:00 PM
+- English must be used for communication during college hours
+
+---
+
+## 21. BOARD OF GOVERNORS (BOG) 2025-26
+
+| Name | Role |
+|------|------|
+| Dr. Manmath Kumar Biswal | President |
+| Mr. Prasanta Kumar Biswal | Member |
+| Mrs. Subrata Biswal | Member |
+| Dr. Banaja Priyadarshini Biswal | Member |
+| Mr. Abhishek Biswal | Member |
+| Dr. Sibendra Kumar Gharai (Principal) | Secretary |
+| Dr. Ratikanta Sahoo (Director) | Member |
+| AICTE Regional Office Nominee | Ex-Officio |
+| BPUT Nominee | Ex-Officio |
+| State Govt. / DTE Nominee | Member |
+| Mrs. Rajshree Swain | Member |
+| Dr. Subarna Keshari Samal (MBA) | Member |
+| Er. Saumya Ranjan Sahu (CSE) | Member |
+| Er. Jyotiranjan Rout (CSE) | Member |
+| Mr. Akshaya Kumar Behera (Industrialist) | Member |
+| Mr. Sangram Das (Industrialist) | Member |
+| Dr. Dipesh Kumar Padhiary (Doctor) | Member |
+
+---
+
+## 22. TRUST INFORMATION — FAKIR MOHAN EDUCATIONAL & CHARITABLE TRUST
+
+- **Registered:** 3 September 1999 (Dist. Sub-Registrar, Cuttack)
+- **Regd. No.:** 458/99
+- **Address:** NH-16, Sergarh, Balasore – 756056, Odisha
+- **Members:** Dr. Manmath Kumar Biswal (Managing Trustee), Mrs. Subrata Biswal, Mr. Prasanta Kumar Biswal, Dr. Banaja Priyadarshini Biswal, Mr. Abhishek Biswal
+- **Objective:** Promote technical education in rural areas of Balasore, Bhadrak & Jajpur districts
+
+---
+
+## 23. AICTE APPROVAL STATUS (2025-26)
+
+- **AICTE File No.:** F. No. Eastern/1-44639917210/2025/EOA
+- **Date of Approval:** 03-Jan-2025
+- **Region:** Eastern
+- **Year of Establishment:** 2001
+- **Institution Type:** Private-Self Financing
+
+| Program | Course | AICTE Approved Intake |
+|---------|--------|-----------------------|
+| UG | Civil Engineering | 60 |
+| UG | Computer Science & Engineering | 90 |
+| UG | Electrical Engineering | 60 |
+| UG | Electronics & Telecommunication Engg. | 60 |
+| UG | Mechanical Engineering | 120 |
+| PG | MBA | 60 |
+| PG | MCA | 60 |
+| PG | M.Tech (Mechanical – Heat Power) | 18 |
+
+---
+
+## 24. BPUT AFFILIATION (2025-26)
+
+- **Affiliation Letter Date:** July 2025
+- **University:** Biju Patnaik University of Technology, Odisha, Rourkela
+- All UG and PG programs confirmed for 2025-26 session
+
+---
+
+## 25. FREQUENTLY ASKED QUESTIONS (FAQ FORMAT)
+
+**Q: What is the address of BCET?**
+A: NH-16, Sergarh, Balasore – 756060, Odisha. Phone: 9777938474.
+
+**Q: Is BCET approved by AICTE?**
+A: Yes, BCET is approved by AICTE, New Delhi. Latest approval is for 2025-26.
+
+**Q: Which university is BCET affiliated to?**
+A: Biju Patnaik University of Technology (BPUT), Bhubaneswar, Odisha.
+
+**Q: What courses does BCET offer?**
+A: B.Tech (CSE, ME, CE, EE, ETC), MBA, MCA, M.Tech (Heat Power & Thermal Engg.). New M.Tech courses in CSE and Power Electronics starting soon. Lateral Entry B.Tech from 2026-27.
+
+**Q: What is the fee for B.Tech at BCET?**
+A: ₹54,900 per year for B.Tech (First Year and Lateral Entry both).
+
+**Q: Who is the Principal of BCET?**
+A: Dr. Sibendra Kumar Gharai. Contact: 9439199850.
+
+**Q: Who is the Director of BCET?**
+A: Dr. Ratikanta Sahoo (PhD, IIT Kharagpur alumnus). Contact: 9337178371.
+
+**Q: How do I get admission to BCET?**
+A: Through OJEE (Odisha) or JEE Main counselling at www.ojee.nic.in. Register, pay ₹450 fee, fill choices, lock, and wait for allotment.
+
+**Q: Is there a hostel at BCET?**
+A: Yes, hostel accommodation is available for all registered students.
+
+**Q: What is the placement record of BCET?**
+A: Average package ₹3.15 LPA, highest package ₹8.5 LPA, 90% placement rate for eligible students.
+
+**Q: Does BCET have anti-ragging measures?**
+A: Yes. BCET has both an Anti-Ragging Squad and an Anti-Ragging Committee. Ragging is strictly prohibited and punishable with fine up to ₹10,000 and expulsion.
+
+**Q: How do I raise a grievance at BCET?**
+A: Contact the Grievance Redressal Committee chaired by the Principal (9439199850), or contact the RTI Cell (Jyoti Ranjan Rout – 9937393122).
+
+**Q: What is the dress code at BCET?**
+A: College uniform is mandatory. Penalty for non-compliance: ₹500.
+
+**Q: What is the TFW scheme?**
+A: Tuition Fee Waiver for students whose parents earn less than ₹8 Lakhs annually. Only for Odisha natives. Covers tuition fee only.
+
+**Q: Where is BCET located relative to the highway?**
+A: On NH-16 (National Highway 16), near Balasore town, Odisha.
+
+**Q: What is the NSS activity at BCET?**
+A: NSS was started in 2012. Activities include blood donation camps, digital literacy, plantation, and community service. NSS PO: Mr. Ambuja Lochan Dash (MBA Dept.).
+
+**Q: Who do I contact for admission-related queries?**
+A: Call 9777938474 or 9437961413. Email: bcetbalasore@yahoo.com.
+
+**Q: What is the seat intake for CSE at BCET in 2025?**
+A: 90 seats (BPUT provisional affiliation 2025-26).
+
+**Q: What is BCET's highest engineering intake department?**
+A: Mechanical Engineering with 120 seats.
+
+---
+
+*Last Updated: 2025-26 Session | Source: BCET Official Documents*
 
 
+
+
+
+
+
+
+
+
+
+
+==================================================
 ===== admission-process_guidelines.pdf =====
 
 JOINT ENTRANCE EXAMINATION-2024, ODISHA
