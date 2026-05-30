@@ -1376,436 +1376,599 @@
 
 
 ##################################
-from dotenv import load_dotenv
-import os
+import streamlit as st
+import warnings
 
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
+warnings.filterwarnings("ignore")
 
-# =====================================
-# DISABLE TOKENIZER WARNING
-# =====================================
+from chatbot import ask_bot
 
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# ======================================
+# PAGE CONFIG
+# ======================================
 
-# =====================================
-# LOAD ENV VARIABLES
-# =====================================
+st.set_page_config(
+    page_title="BCET AI Assistant",
+    page_icon="🎓",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-load_dotenv(override=True)
+# ======================================
+# FORCE LIGHT THEME LOOK
+# ======================================
 
-api_key = os.getenv("GOOGLE_API_KEY")
+st.markdown(
+    """
+<style>
 
-print("\n" + "=" * 60)
-print("GOOGLE API KEY FOUND:", api_key is not None)
+/* ======================================
+GLOBAL APP
+====================================== */
 
-if api_key:
-    print("API KEY STARTS WITH:", api_key[:10] + "...")
-else:
-    print("GOOGLE_API_KEY NOT FOUND")
+.stApp{
+    background: linear-gradient(
+        135deg,
+        #f4f7fb 0%,
+        #dfe9f3 100%
+    );
+}
 
-print("=" * 60 + "\n")
+/* ======================================
+SIDEBAR
+====================================== */
 
-# =====================================
-# VALIDATE API KEY
-# =====================================
+/* ======================================
+SIDEBAR
+====================================== */
 
-if not api_key:
+section[data-testid="stSidebar"]{
 
-    raise ValueError(
-        "GOOGLE_API_KEY not found in .env file"
+    background: linear-gradient(
+        180deg,
+        #003366 0%,
+        #004080 100%
+    ) !important;
+
+    min-width: 320px !important;
+}
+
+/* Sidebar Content */
+
+section[data-testid="stSidebar"] .block-container{
+
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Sidebar Text */
+
+section[data-testid="stSidebar"] *{
+
+    color: white !important;
+}
+
+/* Sidebar Button */
+
+section[data-testid="stSidebar"] button{
+
+    background: linear-gradient(
+        90deg,
+        #ff4b4b,
+        #d90429
+    ) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 12px !important;
+}
+
+/* ======================================
+HEADER
+====================================== */
+
+.main-header{
+
+    background: linear-gradient(
+        135deg,
+        #003b7a 0%,
+        #0059b3 50%,
+        #0073e6 100%
+    );
+
+    padding: 45px 30px;
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0px 10px 30px rgba(0,0,0,0.18),
+        inset 0px 1px 1px rgba(255,255,255,0.15);
+
+    margin-bottom: 28px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Glass overlay */
+
+.main-header::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.12),
+        rgba(255,255,255,0.02)
+    );
+
+    z-index: 1;
+}
+
+/* Header Content */
+
+.header-content{
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* Main Title */
+
+.header-title{
+
+    font-size: 62px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+    color: white !important;
+
+    text-shadow:
+        0px 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Subtitle */
+
+.header-subtitle{
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+    color: rgba(255,255,255,0.92) !important;
+
+    margin-top: 10px;
+}
+
+/* Floating Glow Effect */
+
+.main-header::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 50%;
+
+    top: -80px;
+    right: -60px;
+
+    filter: blur(10px);
+}
+
+/* ======================================
+INFO CARDS
+====================================== */
+
+.info-card{
+    background: rgba(255,255,255,0.95);
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+    min-height: 150px;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ======================================
+CHAT MESSAGES
+====================================== */
+
+[data-testid="stChatMessage"]{
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 18px;
+
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+/* ======================================
+CHAT INPUT
+====================================== */
+
+[data-testid="stChatInput"]{
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 8px;
+
+    border: 1px solid #d1d5db;
+
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.08);
+}
+
+/* ======================================
+CLEAR CHAT BUTTON
+====================================== */
+
+div.stButton > button{
+    background: linear-gradient(
+        90deg,
+        #ff4b4b,
+        #d90429
+    ) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 12px !important;
+
+    padding: 12px !important;
+
+    font-weight: bold !important;
+
+    width: 100% !important;
+
+    transition: 0.3s !important;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+div.stButton > button:hover{
+    transform: scale(1.03);
+    background: linear-gradient(
+        90deg,
+        #ff1e1e,
+        #b3001b
+    ) !important;
+}
+
+/* ======================================
+TEXT COLORS
+====================================== */
+/* ======================================
+TEXT COLORS
+====================================== */
+
+/* Normal Text */
+
+body{
+    color: #1f2937;
+}
+
+/* KEEP HEADER TEXT WHITE */
+
+.main-header h1{
+    color: white !important;
+}
+
+.main-header p{
+    color: rgba(255,255,255,0.95) !important;
+}
+
+/* ======================================
+HIDE STREAMLIT BRANDING
+====================================== */
+
+#MainMenu{
+    visibility:hidden;
+}
+
+footer{
+    visibility:hidden;
+}
+
+}
+/* FORCE SIDEBAR OPEN */
+
+section[data-testid="stSidebar"]{
+    display: block !important;
+    visibility: visible !important;
+    width: 320px !important;
+    min-width: 320px !important;
+}
+
+/* Main content spacing */
+
+.main .block-container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Remove collapsed sidebar */
+
+button[kind="header"]{
+    display: none !important;
+}
+
+</style>
+""",
+    unsafe_allow_html=True
+)
+
+# ======================================
+# SIDEBAR
+# ======================================
+
+with st.sidebar:
+
+    st.image(
+        "assets/bcet_logo.png",
+        width=120
     )
 
-# =====================================
-# LOAD EMBEDDING MODEL
-# =====================================
+    st.markdown(
+        """
+# 🎓 BCET Assistant
+"""
+    )
 
-print("Loading Embedding Model...")
+    st.markdown(
+        """
+### Ask About
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="all-MiniLM-L6-v2"
+✅ Admissions
+
+✅ Departments
+
+✅ Faculty
+
+✅ Placements
+
+✅ Hostel
+
+✅ Facilities
+
+✅ Committees
+
+✅ Contact Information
+"""
+    )
+
+    st.markdown("---")
+
+    if st.button(
+        "🗑️ Clear Chat History",
+        use_container_width=True
+    ):
+
+        st.session_state.messages = []
+
+        st.session_state.chat_history = []
+
+        st.rerun()
+
+# ======================================
+# HEADER
+# ======================================
+
+st.markdown(
+    """
+<div class="main-header">
+
+<h1>🎓 BCET AI Assistant</h1>
+
+<p>
+Balasore College of Engineering and Technology
+</p>
+
+</div>
+""",
+    unsafe_allow_html=True
 )
 
-print("Embedding Model Loaded")
+# ======================================
+# INFO CARDS
+# ======================================
 
-# =====================================
-# LOAD VECTOR STORE
-# =====================================
+col1, col2, col3 = st.columns(3)
 
-print("Loading FAISS Vector Store...")
+with col1:
 
-vectorstore = FAISS.load_local(
-    "vectorstore",
-    embeddings,
-    allow_dangerous_deserialization=True
+    st.markdown(
+        """
+<div class="info-card">
+
+<h3>🏫 College Info</h3>
+
+<p>
+Ask about departments,
+faculty and facilities.
+</p>
+
+</div>
+""",
+        unsafe_allow_html=True
+    )
+
+with col2:
+
+    st.markdown(
+        """
+<div class="info-card">
+
+<h3>📄 Documents</h3>
+
+<p>
+Search PDF notices,
+prospectus and reports.
+</p>
+
+</div>
+""",
+        unsafe_allow_html=True
+    )
+
+with col3:
+
+    st.markdown(
+        """
+<div class="info-card">
+
+<h3>🤖 AI Powered</h3>
+
+<p>
+Powered by Gemini,
+LangChain and FAISS.
+</p>
+
+</div>
+""",
+        unsafe_allow_html=True
+    )
+
+st.write("")
+
+# ======================================
+# SESSION STATE
+# ======================================
+
+if "messages" not in st.session_state:
+
+    st.session_state.messages = []
+
+if "chat_history" not in st.session_state:
+
+    st.session_state.chat_history = []
+
+# ======================================
+# DISPLAY CHAT
+# ======================================
+
+for message in st.session_state.messages:
+
+    with st.chat_message(
+        message["role"]
+    ):
+
+        st.markdown(
+            message["content"]
+        )
+
+# ======================================
+# CHAT INPUT
+# ======================================
+
+query = st.chat_input(
+    "Ask anything about BCET..."
 )
 
-print("Vector Store Loaded Successfully")
+# ======================================
+# PROCESS QUERY
+# ======================================
 
-# =====================================
-# LOAD GEMINI MODEL
-# =====================================
+if query:
 
-print("Loading Gemini Model...")
+    # -----------------------------
+    # USER MESSAGE
+    # -----------------------------
 
-llm = ChatGoogleGenerativeAI(
+    st.session_state.messages.append(
+        {
+            "role": "user",
+            "content": query
+        }
+    )
 
-    model="gemini-3.1-flash-lite",
+    with st.chat_message("user"):
 
-    google_api_key=api_key,
+        st.markdown(query)
 
-    temperature=0.2
-)
+    # -----------------------------
+    # ASSISTANT RESPONSE
+    # -----------------------------
 
-print("Gemini Ready")
+    with st.chat_message("assistant"):
 
-# =====================================
-# GREETING FUNCTION
-# =====================================
-
-def greeting_response():
-
-    return """
-👋 Hello!
-
-I am the BCET AI Assistant.
-
-You can ask me about:
-
-• Admissions  
-• Departments  
-• Faculty Members  
-• Staff Members  
-• HOD Details  
-• Committees  
-• IQAC  
-• Hostel Facilities  
-• Fees Structure  
-• Placements  
-• Contact Information  
-• College Facilities  
-• Principal / Director / Chairman  
-• Department Faculty Lists  
-"""
-
-# =====================================
-# MAIN CHAT FUNCTION
-# =====================================
-
-def ask_bot(
-    query,
-    chat_history=None
-):
-
-    try:
-
-        # =====================================
-        # CLEAN QUERY
-        # =====================================
-
-        query = query.strip()
-
-        query_lower = query.lower()
-
-        # =====================================
-        # GREETING HANDLER
-        # =====================================
-
-        greetings = [
-
-            "hi",
-            "hello",
-            "hey",
-            "good morning",
-            "good afternoon",
-            "good evening"
-
-        ]
-
-        if query_lower in greetings:
-
-            return greeting_response()
-
-        # =====================================
-        # RETRIEVAL
-        # =====================================
-
-        docs = vectorstore.max_marginal_relevance_search(
-
-            query,
-
-            k=15,
-
-            fetch_k=40
-
-        )
-
-        # =====================================
-        # NO DOCUMENTS FOUND
-        # =====================================
-
-        if not docs:
-
-            return """
-I could not find relevant information
-in the BCET knowledge base.
-"""
-
-        # =====================================
-        # BUILD CONTEXT
-        # =====================================
-
-        context = "\n\n".join(
-
-            [
-
-                doc.page_content[:2000]
-
-                for doc in docs
-
-            ]
-
-        )
-
-        # =====================================
-        # CHAT HISTORY
-        # =====================================
-
-        history_text = ""
-
-        if chat_history:
-
-            history_text = "\n".join(
-
-                [
-
-                    f"{role}: {message}"
-
-                    for role, message
-                    in chat_history[-8:]
-
-                ]
-
-            )
-
-        # =====================================
-        # SOURCES
-        # =====================================
-
-        sources = sorted(
-
-            list(
-
-                set(
-
-                    [
-
-                        doc.metadata.get(
-                            "source",
-                            "Unknown"
-                        )
-
-                        for doc in docs
-
-                    ]
-
-                )
-
-            )
-
-        )
-
-        # =====================================
-        # ADVANCED PROMPT
-        # =====================================
-
-        prompt = f"""
-You are BCET AI Assistant.
-
-You help students, parents,
-faculty members and visitors.
-
-You MUST answer ONLY from the
-provided context.
-
-=====================================
-
-IMPORTANT RULES
-
-=====================================
-
-1. NEVER invent information.
-
-2. If information is partially available:
-- provide available information
-- do NOT immediately say "not found"
-
-3. If faculty/staff/member lists
-are requested:
-- combine ALL retrieved chunks
-- include ALL names found
-- do not stop after few names
-
-4. If department faculty lists
-are requested:
-- search carefully through all context
-- include faculty names,
-designation and department if available
-
-5. If exact answer unavailable:
-say:
-"Based on available BCET documents..."
-
-6. If NO relevant answer exists:
-reply exactly:
-
-"I could not find that information in the BCET documents."
-
-7. Keep answers:
-- professional
-- clean
-- properly formatted
-
-8. Use bullet points whenever possible.
-
-9. For HOD / Faculty / Committee /
-IQAC / Staff questions:
-search very carefully in all context.
-
-10. If multiple chunks contain
-faculty names:
-merge them into one final answer.
-
-=====================================
-
-CONVERSATION HISTORY
-
-=====================================
-
-{history_text}
-
-=====================================
-
-CONTEXT
-
-=====================================
-
-{context}
-
-=====================================
-
-CURRENT QUESTION
-
-=====================================
-
-{query}
-
-=====================================
-
-FINAL ANSWER
-
-=====================================
-"""
-
-        # =====================================
-        # GEMINI RESPONSE
-        # =====================================
-
-        response = llm.invoke(
-            prompt
-        )
-
-        # =====================================
-        # EXTRACT RESPONSE TEXT
-        # =====================================
-
-        if isinstance(
-            response.content,
-            str
+        with st.spinner(
+            "🔍 Searching BCET Knowledge Base..."
         ):
 
-            answer = response.content
-
-        elif isinstance(
-            response.content,
-            list
-        ):
-
-            answer = ""
-
-            for item in response.content:
-
-                if isinstance(
-                    item,
-                    dict
-                ):
-
-                    answer += item.get(
-                        "text",
-                        ""
-                    )
-
-                else:
-
-                    answer += str(item)
-
-        else:
-
-            answer = str(
-                response.content
+            answer = ask_bot(
+                query,
+                st.session_state.chat_history
             )
 
-        # =====================================
-        # REMOVE DUPLICATE LINES
-        # =====================================
+            st.markdown(answer)
 
-        cleaned_lines = []
+    # -----------------------------
+    # SAVE RESPONSE
+    # -----------------------------
 
-        seen = set()
+    st.session_state.messages.append(
+        {
+            "role": "assistant",
+            "content": answer
+        }
+    )
 
-        for line in answer.split("\n"):
+    # -----------------------------
+    # MEMORY
+    # -----------------------------
 
-            line_clean = line.strip()
+    st.session_state.chat_history.append(
+        (
+            "User",
+            query
+        )
+    )
 
-            if (
-                line_clean
-                and line_clean not in seen
-            ):
-
-                seen.add(line_clean)
-
-                cleaned_lines.append(line)
-
-        answer = "\n".join(cleaned_lines)
-
-        # =====================================
-        # ADD SOURCES
-        # =====================================
-           # =====================================
-        # RETURN ANSWER
-        # =====================================
-
-        return answer
-
-    except Exception as e:
-
-        return f"""
-❌ Error
-
-{str(e)}
-
-Possible Reasons:
-
-• Invalid Gemini API Key
-
-• Internet Connection Issue
-
-• Missing Vector Store
-
-• Gemini Service Unavailable
-
-• Corrupted Vector Database
-
-• Incorrect .env Configuration
-"""
+    st.session_state.chat_history.append(
+        (
+            "Assistant",
+            answer
+        )
+    )
