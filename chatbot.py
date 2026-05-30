@@ -1274,8 +1274,44 @@ FINAL ANSWER
         # ADD SOURCES
         # =====================================
            # =====================================
-        # RETURN ANSWER
+#         # RETURN ANSWER
+#         # =====================================
+
+#         return answer
+
+#     except Exception as e:
+
+#         return f"""
+# ❌ Error
+
+# {str(e)}
+
+# Possible Reasons:
+
+# • Invalid Gemini API Key
+
+# • Internet Connection Issue
+
+# • Missing Vector Store
+
+# • Gemini Service Unavailable
+
+# • Corrupted Vector Database
+
+# • Incorrect .env Configuration
+# """
+
+   # =====================================
+        # ADD SOURCES
         # =====================================
+
+        if sources:
+
+            answer += "\n\n### Sources\n"
+
+            for source in sources[:8]:
+
+                answer += f"• {source}\n"
 
         return answer
 
